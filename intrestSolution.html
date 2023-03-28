@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution center</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="solutionCenterWrapper">
+        <div class="solutionCenterContainer">
+            <header class="solutionCenterHeader">
+                <div class="nav-menu">
+                    <section class="logo">
+                        <img src="images/logo3.png" alt="logo">
+                    </section>
+                    <section class="navigation">
+                        <ul>
+                            <li><a href="landingPage.html">HOME</a></li>
+                            <li><a href="mathTips.html">MATH TIPS</a></li>
+                            <li><a href="solutionCenter.html">SOLUTION CENTER</a></li>
+                            <li><a href="aboutUs.html">ABOUT US</a></li>
+                        </ul>
+                    </section>
+                </div>
+            </header>
+                <div class="solutionCenterBanner">
+                    <p>Welcome to solution center <br> Where you can get answers and solution  steps by just inputing the <br> values given in the question of the following topics below:</p>
+                </div>
+            <div class="page-contents solutionz">
+                <div class="solution-nav-menu">
+                    <!-- solution nav buttons -->
+                    <ul class="solution-nav-buttons">
+                        <li><a href="solutionCenter.html" class="tab-btn" data-id="quadratic">QUADRATIC EQUATION</a></li>
+                        <li><a href="matrix3x3solution.html" class="tab-btn" data-id="matrix3x3">3x3 MATRIX</a></li>
+                        <li><a href="matrix2x2solution.html" class="tab-btn" data-id="matrix2x2">2x2 MATRIX</a></li>
+                        <li><a href="intrestSolution.html" class="tab-btn" data-id="simpleIntrest">SIMPLE INTREST</a></li>
+                        <li><a href="meanSolution.html" class="tab-btn" data-id="mean">MEAN</a></li>
+                        <li><a href="medianSolution.html" class="tab-btn" data-id="median">MEDIAN</a></li>
+                        <li><a href="modeSolution.html" class="tab-btn" data-id="mode">MODE</a></li>
+                        <li><a href="linear equation.html" class="tab-btn" data-id="linear">LINEAR EQUATION</a></li>
+                    </ul>
+                </div>
+                
+                
+                <div class="solution-section">
+                <!-- simple intrest starts -->
+                <div class="simple-intrest content solutionz" id="intrest-solutions">
+                    <h1>Simple intrest solver</h1>
+                    <p>I = Intrest <br> P = Principal <br> R = Rate <br> T = Time</p>
+                    <p>Simple intrest formulas: <br> I = (p * r * t) / 100  <br> P = (I * 100) / (r * t) <br> R = (I * 100) / (p * t) <br>T = (I * 100) / (p * r) </p>
+                
+                    <!-- Tooggle button options -->
+                    <button class="intrest-but active" data-id="intrest"> INTREST</button>
+                    <button class="intrest-but" data-id="principal"> PRINCIPAL</button>
+                    <button class="intrest-but" data-id="rate"> RATE</button>
+                    <button class="intrest-but" data-id="time"> TIME</button>
+                
+                
+                    <!-- Intrest section -->
+                    <section class="intrest-section contentz active" id="intrest">
+                        <p>To find the Intrest input the following values</p>
+                        <label for="principal"> Input Principal Value: <input type="text" id="intrest-principal-field"></label>
+                        <label for="rate"> Input Rate Value: <input type="text" id="intrest-rate-field"></label>
+                        <label for="time"> Input Time Value: <input type="text" id="intrest-time-field"></label>
+                        <button onclick="simpleIntrest()">RESULT</button>
+                
+                        <p id="intrest-solution"></p>
+                        <button id="intrest-workings-button" class="intrest-solving-button" onclick="intreststeps()" >SHOW WORKINGS </button>
+                        <ul id="intrest-steps" style="list-style-type:none;">
+                
+                        </ul>
+                    </section>
+                
+                    <!-- Principal section -->
+                    <section class="principal-section contentz" id="principal">
+                        <p>To find the Principal input the following values</p>
+                        <label for="intrest"> Input Intrest Value: <input type="text" id="principal-intrest-field"></label>
+                        <label for="rate"> Input Rate Value: <input type="text" id="principal-rate-field"></label>
+                        <label for="time"> Input Time Value: <input type="text" id="principal-time-field"></label>
+                        <button onclick="principal()">RESULT</button>
+                        <p id="principal-solution"></p>
+                        <button id="principal-workings-button" class="intrest-solving-button" onclick="principalsteps()"> SHOW WORKINGS</button>
+                        <ul id="principal-steps" style="list-style-type: none;">
+                
+                        </ul>
+                    </section>
+                
+                    <!--Rate section  -->
+                    <section class="rate-section contentz" id="rate">
+                        <p>To find the Rate input the following values</p>
+                        <label for="principal"> Input Principal Value: <input type="text" id="rate-principal-field"></label>
+                        <label for="intrest"> Input Intrest Value: <input type="text" id="rate-intrest-field"></label>
+                        <label for="time"> Input Time Value: <input type="text" id="rate-time-field"></label>
+                        <button onclick="rate()">RESULT</button>
+                        <p id="rate-solution"></p>
+                        <button id="rate-workings-button" class="intrest-solving-button" onclick="ratesteps()">SHOW WORKINGS</button>
+                        <ul id="rate-steps" style="list-style-type: none;"></ul>
+                    </section>
+                
+                    <!-- Time section -->
+                    <section class="time-section contentz" id="time">
+                        <p>To find the Time(years) input the following values</p>
+                        <label for="principal"> Input Principal Value: <input type="text" id="time-principal-field"></label>
+                        <label for="rate"> Input Rate Value: <input type="text" id="time-rate-field"></label>
+                        <label for="intrest"> Input Intrest Value: <input type="text" id="time-intrest-field"></label>
+                        <button onclick="time()">RESULT</button>
+                        <p id="time-solution"></p>
+                        <button id="time-workings-button" class="intrest-solving-button" onclick="timesteps()">SHOW WORKINGS</button>
+                        <ul id="time-steps" style="list-style-type: none;"></ul>
+                    </section>
+                    </div>
+                
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="calculator.js"></script>
+</html>

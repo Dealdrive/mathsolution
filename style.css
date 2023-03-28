@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    color: white;
+    background: linear-gradient(#0b7799, rgb(88,116,242,0.1)), url("images/hero.jpg");
+    background-position: center  ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo img{
+    margin:0 0 0 2rem;
+    width: 12rem;
+    height: 3rem;
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation ul {
+    margin-right: 30rem;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+.navigation ul li{
+    margin-right: 2rem;
+}
+.navigation a{
+    text-decoration: none;
+    color: white;
+}
+/* nav section ends */
+
+.landingPageBanner-text{
+    margin-top: 7rem;
+    padding: 3rem;
+}
+.landingPageBanner-text h1{
+    font-family:'Times New Roman', Times, serif;
+    margin-bottom: 1rem;
+}
+.landingPageBanner-text h1 span{
+    font-style:italic ;
+    color: black;
+}
+.landingPageBanner-text p{
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5rem;
+}
+.math-tips-button{
+    margin-top: 2rem;
+    height: 1.5rem;
+    border-radius: 1rem;
+}
+.math-tips-button .math-tips{
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: silver;
+}
+.menu-icon {
+    display: none;
+  }
+
+@media only screen and (max-width: 768px) {
+    
+    .menu-icon {
+      display: block;
+    }
+    .navigation{
+        position: absolute;
+        display: none;
+        top: 40px;
+        right: 0;
+    }
+    .navigation.active{
+        display: block;
+    }
+    .navigation ul {
+        position: relative;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-right: 40px;
+    }
+    .navigation ul li{
+        padding: 10px;
+        
+    }
+}
+
+
+
+/* solution center  styling starts */
+
+.solutionCenterHeader, .math-tips-header, .about-us-header{
+    background:linear-gradient(25deg, #0b7799, #003762);
+    margin-bottom: 0.5rem;
+}
+.solutionCenterBanner-text p{
+    text-align: center;
+}
+.solution-nav-menu ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+    list-style-type: none;
+}
+.solution-nav-menu ul li a{
+    text-decoration: none;
+    background: linear-gradient(25deg, #0b7799, #003762);
+    cursor: pointer;
+    color:white;
+    padding:0.5rem;
+    border-radius: 0.3rem;
+}
+
+.solutionCenterBanner{
+    background: linear-gradient(rgb(228,232,233,0.1), rgb(88,116,242,0.1)), url("images/solutionBanner2.jpg");
+    height: 15rem;
+    background-position:top;
+    background-size:cover;
+    background-attachment: fixed;
+}
+.solutionCenterBanner p{
+    position: relative;
+    top: 5rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: white;
+    font-size:x-large;
+    font-weight:bolder;
+}
+.content{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* math tips styling starts */
+.mathTipsBanner {
+    text-align: center;
+} 
+
+.mathTipsBanner img{
+    width: 90%;
+    height:20rem;
+    
+}
+.math-study-tips-header{
+    max-width: 750px;
+    margin: 0 auto;
+}
+.math-study-tips-header h2{
+    background:linear-gradient(25deg, #0b7799, #003762);
+    color: white;
+    max-width: 20rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.4rem;
+    font-family:  'Futura', sans-serif;
+}
+.list-details{
+    padding: 0.1rem 0 0.5rem 1rem;
+}
+.mathtipsContents{
+    display: flex;
+}
+.aside{
+    max-width: 9rem;
+    margin: 1rem auto;
+    display: block;
+    
+}
+.asideImage img{
+    width: 12.1rem;
+    margin-top: 1.5rem;
+}
+
+/* simple intrest button toogle */
+.contentz {
+    display: none;
+}
+.contentz.active {
+    display: block;
+}
+.intrest-but{
+    border: none;
+    padding: 0.1rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+.intrest-but.active {
+    background:linear-gradient(25deg, #0b7799, #003762);
+    color: white;
+}
+.intrest-but:hover{
+    background:linear-gradient(25deg, #0b7799, #003762);
+    color: white;
+}
+.intrest-solving-button{
+    margin-top: 0.5rem;
+}

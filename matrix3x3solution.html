@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution center</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="solutionCenterWrapper">
+        <div class="solutionCenterContainer">
+            <header class="solutionCenterHeader">
+                <div class="nav-menu">
+                    <section class="logo">
+                        <img src="images/logo3.png" alt="logo">
+                    </section>
+                    <section class="navigation">
+                        <ul>
+                            <li><a href="landingPage.html">HOME</a></li>
+                            <li><a href="mathTips.html">MATH TIPS</a></li>
+                            <li><a href="solutionCenter.html">SOLUTION CENTER</a></li>
+                            <li><a href="aboutUs.html">ABOUT US</a></li>
+                        </ul>
+                    </section>
+                </div>
+            </header>
+                <div class="solutionCenterBanner">
+                    <p>Welcome to solution center <br> Where you can get answers and solution  steps by just inputing the <br> values given in the question of the following topics below:</p>
+                </div>
+            <div class="page-contents solutionz">
+                <div class="solution-nav-menu">
+                    <!-- solution nav buttons -->
+                    <ul class="solution-nav-buttons">
+                        <li><a href="solutionCenter.html" class="tab-btn" data-id="quadratic">QUADRATIC EQUATION</a></li>
+                        <li><a href="matrix3x3solution.html" class="tab-btn" data-id="matrix3x3">3x3 MATRIX</a></li>
+                        <li><a href="matrix2x2solution.html" class="tab-btn" data-id="matrix2x2">2x2 MATRIX</a></li>
+                        <li><a href="intrestSolution.html" class="tab-btn" data-id="simpleIntrest">SIMPLE INTREST</a></li>
+                        <li><a href="meanSolution.html" class="tab-btn" data-id="mean">MEAN</a></li>
+                        <li><a href="medianSolution.html" class="tab-btn" data-id="median">MEDIAN</a></li>
+                        <li><a href="modeSolution.html" class="tab-btn" data-id="mode">MODE</a></li>
+                        <li><a href="linear equation.html" class="tab-btn" data-id="linear">LINEAR EQUATION</a></li>
+                    </ul>
+                </div>
+                
+                
+                <section class="solution-section">
+                <!-- 3x3 matrix determinant starts -->
+                <div class="3by3determinant content">
+                    <h1>Determinant of a 3x3 Matrix</h1>
+                    <p>Enter the values of the matrix:</p>
+                    <input type="text" id="det3a11" placeholder="a11"> <input type="text" id="det3a12" placeholder="a12"> <input type="text" id="det3a13" placeholder="a13"> <br>
+                    <input type="text" id="det3a21" placeholder="a21"> <input type="text" id="det3a22" placeholder="a22"> <input type="text" id="det3a23" placeholder="a23"> <br>
+                    <input type="text" id="det3a31" placeholder="a31"> <input type="text" id="det3a32" placeholder="a32"> <input type="text" id="det3a33" placeholder="a33"> <br> <br>
+                    <button onclick="calculate()">Calculate Determinant</button>
+                    <p id="determinant3-result"></p>
+                </div>
+                    
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="calculator.js"></script>
+</html>

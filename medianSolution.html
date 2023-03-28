@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution center</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="solutionCenterWrapper">
+        <div class="solutionCenterContainer">
+            <header class="solutionCenterHeader">
+                <div class="nav-menu">
+                    <section class="logo">
+                        <img src="images/logo3.png" alt="logo">
+                    </section>
+                    <section class="navigation">
+                        <ul>
+                            <li><a href="landingPage.html">HOME</a></li>
+                            <li><a href="mathTips.html">MATH TIPS</a></li>
+                            <li><a href="solutionCenter.html">SOLUTION CENTER</a></li>
+                            <li><a href="aboutUs.html">ABOUT US</a></li>
+                        </ul>
+                    </section>
+                </div>
+            </header>
+                <div class="solutionCenterBanner">
+                    <p>Welcome to solution center <br> Where you can get answers and solution  steps by just inputing the <br> values given in the question of the following topics below:</p>
+                </div>
+            <div class="page-contents solutionz">
+                <div class="solution-nav-menu">
+                    <!-- solution nav buttons -->
+                    <ul class="solution-nav-buttons">
+                        <li><a href="solutionCenter.html" class="tab-btn" data-id="quadratic">QUADRATIC EQUATION</a></li>
+                        <li><a href="matrix3x3solution.html" class="tab-btn" data-id="matrix3x3">3x3 MATRIX</a></li>
+                        <li><a href="matrix2x2solution.html" class="tab-btn" data-id="matrix2x2">2x2 MATRIX</a></li>
+                        <li><a href="intrestSolution.html" class="tab-btn" data-id="simpleIntrest">SIMPLE INTREST</a></li>
+                        <li><a href="meanSolution.html" class="tab-btn" data-id="mean">MEAN</a></li>
+                        <li><a href="medianSolution.html" class="tab-btn" data-id="median">MEDIAN</a></li>
+                        <li><a href="modeSolution.html" class="tab-btn" data-id="mode">MODE</a></li>
+                        <li><a href="linear equation.html" class="tab-btn" data-id="linear">LINEAR EQUATION</a></li>
+                    </ul>
+                </div>
+                
+                
+                <section class="solution-section content">
+                <!-- median section -->
+                <div class="median-section">
+                    <h1>Calculate Median</h1>
+                    <label for="median-numbers">Enter numbers seperated by commas:</label>
+                    <input type="text" id="median-numbers">
+                    <button onclick="calculateMedian()">Calculate Median</button>
+                    <p id="median-result"></p>
+                
+                </div>
+                    
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="calculator.js"></script>
+</html>
